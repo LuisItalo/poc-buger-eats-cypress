@@ -10,7 +10,7 @@ describe('Signup', () => {
     //     })
     // })
 
-    it.skip('User should be deliver', function () {
+    it('User should be deliver', function () {
 
 
         var deliver = signupFactory.deliver()
@@ -23,7 +23,7 @@ describe('Signup', () => {
         signupPage.modalContentShoudBe(expectedMessage)
     })
 
-    it.skip('Incorrect document', function () {
+    it('Incorrect document', function () {
 
         var deliver = signupFactory.deliver()  //PARA USAR MASSA DE DADOS FACTORies
         deliver.cpf = '123321123AA'
@@ -34,7 +34,7 @@ describe('Signup', () => {
         signupPage.alertMessageShouldBe('Oops! CPF inválido')
     })
 
-    it.skip('Incorrect email', function () {
+    it('Incorrect email', function () {
 
         var deliver = signupFactory.deliver()
 
@@ -51,7 +51,7 @@ describe('Signup', () => {
         const messages = [
             { field: 'name', output: 'É necessário informar o nome' },
             { field: 'cpf', output: 'É necessário informar o CPF' },
-            { field: 'email', output: 'É necessário informar o e-mail' },
+            { field: 'email', output: 'É necessário informar o email' },
             { field: 'postalcode', output: 'É necessário informar o CEP' },
             { field: 'number', output: 'É necessário informar o número do endereço' },
             { field: 'delivery_method', output: 'Selecione o método de entrega' },
