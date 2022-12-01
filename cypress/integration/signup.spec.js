@@ -81,7 +81,7 @@ describe('Signup', () => {
     //     signupPage.alertMessageShouldBe('É necessário informar o número do endereço')
     //     signupPage.alertMessageShouldBe('Selecione o método de entrega')
     //     signupPage.alertMessageShouldBe('Adicione uma foto da sua CNH')
-
+//
 
     // })
 })
